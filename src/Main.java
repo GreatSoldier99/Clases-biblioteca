@@ -109,7 +109,7 @@ class Empleado{
 class Prestamo{
     private LocalDateTime fechaHora;
     private Usuario usuario;
-    private Libro libros;
+    private Libro []libros;
     private Empleado empleado;
 
     public LocalDateTime getFechaHora(){
@@ -126,10 +126,10 @@ class Prestamo{
         usuario=persona;
     }
 
-    public Libro getLibros(){
+    public Libro[] getLibros(){
         return libros;
     }
-    public void setLibros(Libro obras){
+    public void setLibros(Libro []obras){
         libros=obras;
     }
 
@@ -141,20 +141,22 @@ class Prestamo{
     }
 }
 
-/*class AdministradorDeUsuarios{
+class AdministradorDeUsuarios{
     public Usuario dameUsuarioPorClave(String clave){
+        return null;
     }
 }
 
 class AdministradorDeLibros{
     public Libro dameLibroPorClave(String clave){
+        return null;
     }
 }
 
 class AdministradorDePrestamos{
-    public void registraPrestamo(Empleado empleado, Usuario usuario, Libro libros[]){
+    public void registraPrestamo(Empleado empleado, Usuario usuario, Libro []libros){
     }
-}*/
+}
 
 public class Main {
     public static void main(String[] args) {
